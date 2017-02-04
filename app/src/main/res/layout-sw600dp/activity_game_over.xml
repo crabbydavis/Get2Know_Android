@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    android:background="@color/Light_Green">
+
+    <TextView
+        android:id="@+id/winnerText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Winner!"
+        android:textSize="60dp"
+        android:textColor="@color/Dark_Blue"/>
+
+    <TextView
+        android:id="@+id/finalScoreTitleText"
+        android:layout_above="@+id/player1FinalScoreText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Final Score:"
+        android:textSize="60dp"
+        android:textColor="@color/Dark_Green"/>
+
+    <TextView
+        android:id="@+id/player1FinalScoreText"
+        android:layout_above="@+id/scoreSpacer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1 Score"
+        android:textSize="40dp"
+        android:textColor="@color/Dark_Blue"
+        />
+
+    <Space
+        android:id="@+id/scoreSpacer"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Dark_Blue"
+        />
+
+    <TextView
+        android:id="@+id/player2FinalScoreText"
+        android:layout_below="@+id/scoreSpacer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2 Score"
+        android:textSize="40dp"
+        android:textColor="@color/Dark_Blue"/>
+
+    <Button
+        android:id="@+id/menuButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="Menu"
+        android:textSize="45dp"
+        android:textColor="@color/Dark_Green"
+        android:background="@drawable/professional_button"/>
+
+</RelativeLayout>

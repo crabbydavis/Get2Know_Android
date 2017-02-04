@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Light_Green">
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sample"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:typeface="serif"
+        android:textColor="@color/Dark_Green"
+        />
+
+    <TextView
+        android:id="@+id/answerTitleText"
+        android:layout_below="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_centerHorizontal="true"
+        android:text="Answer"
+        android:textSize="30dp"
+        android:textColor="@color/Dark_Green"/>
+
+    <EditText
+        android:id="@+id/answerEditText"
+        android:layout_below="@id/answerTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="18dp"
+        android:textColor="@color/Dark_Blue"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        android:inputType="textAutoCorrect|textCapSentences"
+        android:maxLength="16"/>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:padding="20dp"
+        android:text="Submit"
+        android:textSize="22dp"
+        android:textColor="@color/Dark_Green"
+        android:background="@drawable/professional_button"/>
+</RelativeLayout>

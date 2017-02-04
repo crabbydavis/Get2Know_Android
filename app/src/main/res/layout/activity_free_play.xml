@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/background_gradient">
+
+    <Button
+        android:id="@+id/freePlayNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="62dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="50dp"
+        android:padding="20dp"
+        android:text="Next"
+        android:textSize="20dp"
+        android:textColor="@color/Dark_Green"
+        android:background="@drawable/professional_button"
+        />
+
+    <Button
+        android:id="@+id/freePlayMenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:padding="20dp"
+        android:text="Menu"
+        android:textSize="20dp"
+        android:textColor="@color/Dark_Green"
+        android:background="@drawable/professional_button"/>
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/get2know_title"/>
+
+    <TextView
+        android:id="@+id/freePlayQuestionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:text="Sample"
+        android:textSize="30dp"
+        android:textColor="@color/Dark_Green"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:typeface="sans"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"/>
+
+</RelativeLayout>
