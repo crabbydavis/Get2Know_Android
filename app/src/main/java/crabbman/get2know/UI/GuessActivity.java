@@ -233,8 +233,8 @@ public class GuessActivity extends Activity{
 
     public void updateScore(){
 
-        player1ScoreText.setText(Get2KnowContainer.getInstance().getPlayers().get(player1).getName() + " Score " + Get2KnowContainer.getInstance().getPlayers().get(player1).getScore());
-        player2ScoreText.setText(Get2KnowContainer.getInstance().getPlayers().get(player2).getName() + " Score " + Get2KnowContainer.getInstance().getPlayers().get(player2).getScore());
+        player1ScoreText.setText(Get2KnowContainer.getInstance().getPlayers().get(player1).getName() + " Score: " + Get2KnowContainer.getInstance().getPlayers().get(player1).getScore());
+        player2ScoreText.setText(Get2KnowContainer.getInstance().getPlayers().get(player2).getName() + " Score: " + Get2KnowContainer.getInstance().getPlayers().get(player2).getScore());
     }
 
     public void nextPlayersTurn(){

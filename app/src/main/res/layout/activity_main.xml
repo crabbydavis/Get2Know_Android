@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="crabbman.get2know.UI.MainActivity"
-    android:background="@drawable/background_gradient">
+    android:background="@color/new_gray">
 
     <TextView
         android:id="@+id/title"
@@ -18,7 +18,7 @@
         android:layout_height="280dp"
         android:layout_centerHorizontal="true"
         android:paddingTop="40dp"
-        android:background="@drawable/get2know_title"/>
+        android:background="@drawable/new_get2know_title"/>
 
     <Button
         android:id="@+id/playGameButton"
@@ -29,8 +29,8 @@
         android:layout_centerHorizontal="true"
         android:text="Play Game"
         android:textSize="25dp"
-        android:background="@drawable/professional_button"
-        android:textColor="@color/Dark_Green"
+        android:typeface="sans"
+        android:background="@color/new_orange"
         />
 
     <Button
@@ -42,8 +42,8 @@
         android:layout_centerHorizontal="true"
         android:text="Free Play"
         android:textSize="25dp"
-        android:textColor="@color/Dark_Green"
-        android:background="@drawable/professional_button"/>
+        android:typeface="sans"
+        android:background="@color/new_orange"/>
 
     <ImageView
         android:id="@+id/informationAboutGame"

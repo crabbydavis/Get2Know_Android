@@ -14,7 +14,8 @@
               android:text="Testing!"
               android:textStyle="bold"
               android:textAlignment="center"
-              android:textColor="@color/Dark_Green"
-              android:background="@color/Dark_Gray"
+              android:textColor="@color/black"
+              android:typeface="sans"
+              android:background="@color/Light_Green"
         />
 </LinearLayout>

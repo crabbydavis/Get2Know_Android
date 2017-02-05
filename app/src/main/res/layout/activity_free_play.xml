@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@drawable/background_gradient">
+              android:background="@color/new_gray">
 
     <Button
         android:id="@+id/freePlayNextButton"
@@ -16,8 +16,8 @@
         android:padding="20dp"
         android:text="Next"
         android:textSize="20dp"
-        android:textColor="@color/Dark_Green"
-        android:background="@drawable/professional_button"
+        android:typeface="sans"
+        android:background="@color/new_orange"
         />
 
     <Button
@@ -32,8 +32,8 @@
         android:padding="20dp"
         android:text="Menu"
         android:textSize="20dp"
-        android:textColor="@color/Dark_Green"
-        android:background="@drawable/professional_button"/>
+        android:typeface="sans"
+        android:background="@color/new_orange"/>
 
     <ImageView
         android:layout_width="130dp"
@@ -41,7 +41,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="30dp"
-        android:background="@drawable/get2know_title"/>
+        android:background="@drawable/new_get2know_title"/>
 
     <TextView
         android:id="@+id/freePlayQuestionText"
@@ -51,10 +51,9 @@
         android:layout_marginLeft="10dp"
         android:text="Sample"
         android:textSize="30dp"
-        android:textColor="@color/Dark_Green"
         android:textAlignment="center"
-        android:textStyle="italic"
-        android:typeface="sans"
+        android:textColor="@color/black"
+        android:typeface="serif"
         android:ellipsize="none"
         android:scrollHorizontally="false"
         android:layout_centerHorizontal="true"
