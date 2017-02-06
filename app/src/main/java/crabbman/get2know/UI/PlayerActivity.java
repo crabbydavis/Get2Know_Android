@@ -141,9 +141,9 @@ public class PlayerActivity extends Activity {
             public void onClick(View v){
                 if(Get2KnowContainer.getInstance().getPlayers().get(player1).getName().equals("") || Get2KnowContainer.getInstance().getPlayers().get(player2).getName().equals("")){
                     makeErrorMessage("Please enter names for both players");
-                    if(Get2KnowContainer.getInstance().getNumGuesses() == 0){
-                        makeErrorMessage("Please select the Level of Difficulty");
-                    }
+                }
+                else if(Get2KnowContainer.getInstance().getNumGuesses() == 0){
+                    makeErrorMessage("Please select the Level of Difficulty");
                 }
                 else {
                     Intent questionIntent = new Intent(playerContext, QuestionActivity.class);

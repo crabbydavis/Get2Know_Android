@@ -43,9 +43,9 @@ public class GameOverActivity extends Activity {
             winnerText.setText(Get2KnowContainer.getInstance().getPlayers().get(player2).getName() + " Wins!!");
         }
         player1FinalScoreText = (TextView) findViewById(R.id.player1FinalScoreText);
-        player1FinalScoreText.setText(Get2KnowContainer.getInstance().getPlayers().get(player1).getName() + " " + Get2KnowContainer.getInstance().getPlayers().get(player1).getScore());
+        player1FinalScoreText.setText(Get2KnowContainer.getInstance().getPlayers().get(player1).getName() + ": " + Get2KnowContainer.getInstance().getPlayers().get(player1).getScore());
         player2FinalScoreText = (TextView) findViewById(R.id.player2FinalScoreText);
-        player2FinalScoreText.setText(Get2KnowContainer.getInstance().getPlayers().get(player2).getName() + " " + Get2KnowContainer.getInstance().getPlayers().get(player2).getScore());
+        player2FinalScoreText.setText(Get2KnowContainer.getInstance().getPlayers().get(player2).getName() + ": " + Get2KnowContainer.getInstance().getPlayers().get(player2).getScore());
         menuButton = (Button) findViewById(R.id.menuButton);
     }
 
@@ -54,6 +54,8 @@ public class GameOverActivity extends Activity {
         menuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Reset the variables for a new game
+                Get2KnowContainer.getInstance().resetGame();
                 Intent mainContext = new Intent(gameOverContext, MainActivity.class);
                 mainContext.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(mainContext);

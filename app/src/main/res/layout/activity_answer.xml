@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/Light_Green">
+                android:background="@color/new_gray">
 
     <TextView
         android:id="@+id/questionText"
@@ -16,7 +16,7 @@
         android:textSize="30dp"
         android:textAlignment="center"
         android:typeface="serif"
-        android:textColor="@color/Dark_Green"
+        android:textColor="@color/black"
         />
 
     <TextView
@@ -26,9 +26,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="95dp"
         android:layout_centerHorizontal="true"
-        android:text="Answer"
+        android:text="@string/answer"
         android:textSize="30dp"
-        android:textColor="@color/Dark_Green"/>
+        android:textColor="@color/black"
+        android:typeface="serif"/>
 
     <EditText
         android:id="@+id/answerEditText"
@@ -39,7 +40,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:textSize="18dp"
-        android:textColor="@color/Dark_Blue"
+        android:textColor="@color/black"
         android:maxLines="1"
         android:imeOptions="actionDone"
         android:inputType="textAutoCorrect|textCapSentences"
@@ -53,8 +54,9 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
         android:padding="20dp"
-        android:text="Submit"
+        android:text="@string/submit"
         android:textSize="22dp"
-        android:textColor="@color/Dark_Green"
-        android:background="@drawable/professional_button"/>
+        android:textColor="@color/black"
+        android:typeface="sans"
+        android:background="@color/new_orange"/>
 </RelativeLayout>

@@ -16,5 +16,6 @@
         android:textSize="15dp"
         android:textAlignment="center"
         android:typeface="serif"
+        android:textColor="@color/black"
         />
 </RelativeLayout>

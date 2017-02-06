@@ -14,7 +14,9 @@
         android:layout_height="wrap_content"
         android:text="Please Enter Player Names:"
         android:textSize="20dp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:typeface="serif"
+        />
 
     <TextView
         android:id="@+id/player1Title"
@@ -25,7 +27,9 @@
         android:layout_marginLeft="20dp"
         android:text="@string/player_1"
         android:textSize="18dp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:typeface="serif"
+        />
 
     <EditText
         android:id="@+id/player1Name"
@@ -51,7 +55,9 @@
         android:layout_marginLeft="20dp"
         android:text="@string/player_2"
         android:textSize="18dp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:typeface="serif"
+        />
 
     <EditText
         android:id="@+id/player2Name"
@@ -77,6 +83,7 @@
         android:layout_centerHorizontal="true"
         android:text="Pick the Level of Difficulty"
         android:textSize="20dp"
+        android:typeface="serif"
         android:textColor="@color/black"/>
 
     <RelativeLayout
@@ -123,8 +130,8 @@
         android:layout_marginBottom="40dp"
         android:layout_width="180dp"
         android:layout_height="80dp"
-        android:text="Start Game"
-        android:textSize="20dp"
+        android:text="@string/start_game"
+        android:textSize="22dp"
         android:textColor="@color/black"
         android:typeface="sans"
         android:background="@color/new_orange"/>

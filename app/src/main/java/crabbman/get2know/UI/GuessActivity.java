@@ -197,12 +197,12 @@ public class GuessActivity extends Activity{
                     }
 
                     public void onFinish() {
-                        if ((currentPlayer.getScore() == Get2KnowContainer.getInstance().getWinningScore()) || (otherPlayer.getScore() == Get2KnowContainer.getInstance().getWinningScore())) {
-                            endGame();
-                        }
-                        else {
+                        //if ((currentPlayer.getScore() == Get2KnowContainer.getInstance().getWinningScore()) || (otherPlayer.getScore() == Get2KnowContainer.getInstance().getWinningScore())) {
+                            //endGame();
+                        //}
+                        //else {
                             nextPlayersTurn();
-                        }
+                        //}
                     }
 
                 }.start();
@@ -215,7 +215,7 @@ public class GuessActivity extends Activity{
                     public void onTick(long millisUntilFinished) {
                     }
                     public void onFinish() {
-                        if ((currentPlayer.getScore() == Get2KnowContainer.getInstance().getWinningScore()) || (otherPlayer.getScore() == Get2KnowContainer.getInstance().getWinningScore())) {
+                        if (checkForWinner()) {
                             endGame();
                         }
                         else {
@@ -233,8 +233,8 @@ public class GuessActivity extends Activity{
 
     public void updateScore(){
 
-        player1ScoreText.setText(Get2KnowContainer.getInstance().getPlayers().get(player1).getName() + " Score: " + Get2KnowContainer.getInstance().getPlayers().get(player1).getScore());
-        player2ScoreText.setText(Get2KnowContainer.getInstance().getPlayers().get(player2).getName() + " Score: " + Get2KnowContainer.getInstance().getPlayers().get(player2).getScore());
+        player1ScoreText.setText(Get2KnowContainer.getInstance().getPlayers().get(player1).getName() + "'s Score: " + Get2KnowContainer.getInstance().getPlayers().get(player1).getScore());
+        player2ScoreText.setText(Get2KnowContainer.getInstance().getPlayers().get(player2).getName() + "'s Score: " + Get2KnowContainer.getInstance().getPlayers().get(player2).getScore());
     }
 
     public void nextPlayersTurn(){
@@ -246,6 +246,39 @@ public class GuessActivity extends Activity{
     public void nextQuestion(){
         Intent questionIntent = new Intent(this, QuestionActivity.class);
         startActivity(questionIntent);
+    }
+
+    public boolean checkForWinner(){
+
+        boolean currentPlayerWins = false;
+        boolean otherPlayerWins = false;
+
+        if(currentPlayer.getScore() == Get2KnowContainer.getInstance().getWinningScore()){
+            currentPlayerWins = true;
+        }
+        if(otherPlayer.getScore() == Get2KnowContainer.getInstance().getWinningScore()) {
+            otherPlayerWins = true;
+        }
+        if(currentPlayerWins && otherPlayerWins){
+            Get2KnowContainer.getInstance().setWinningScore(Get2KnowContainer.getInstance().getWinningScore() + 1);
+            makeCustomToast("Tiebreaker!!", true);
+
+            // Set a timer for the toast to appear before going to the next screen
+            new CountDownTimer(2000, 1000) {
+                public void onTick(long millisUntilFinished) {
+                }
+                public void onFinish() {
+                }
+            }.start();
+
+            return false;
+        }
+        else if(currentPlayerWins || otherPlayerWins){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public void endGame(){

@@ -45,6 +45,11 @@ public class QuestionActivity extends Activity {
 
     public void getQuestion(){
 
+        // First check to see if there are any available questions
+        if(!checkForQuestions()) {
+            resetQuestions();
+        }
+
         // Create a random variable to get a random question
         Random rand = new Random();
         do {
@@ -76,8 +81,8 @@ public class QuestionActivity extends Activity {
         // Initialize the Score
         player1ScoreText = (TextView) findViewById(R.id.player1ScoreText);
         player2ScoreText = (TextView) findViewById(R.id.player2ScoreText);
-        player1ScoreText.setText(Get2KnowContainer.getInstance().getPlayers().get(player1).getName() + " Score " + Get2KnowContainer.getInstance().getPlayers().get(player1).getScore());
-        player2ScoreText.setText(Get2KnowContainer.getInstance().getPlayers().get(player2).getName() + " Score " + Get2KnowContainer.getInstance().getPlayers().get(player2).getScore());
+        player1ScoreText.setText(Get2KnowContainer.getInstance().getPlayers().get(player1).getName() + "'s Score: " + Get2KnowContainer.getInstance().getPlayers().get(player1).getScore());
+        player2ScoreText.setText(Get2KnowContainer.getInstance().getPlayers().get(player2).getName() + "'s Score: " + Get2KnowContainer.getInstance().getPlayers().get(player2).getScore());
 
     }
 
@@ -128,6 +133,29 @@ public class QuestionActivity extends Activity {
                 }
             }
         });
+    }
+
+    // This will check to see if any question hasn't been asked yet.
+    public boolean checkForQuestions(){
+
+        boolean foundUnusedQuestion = false;
+        for(int i = 0; i < Get2KnowContainer.getInstance().getQuestions().size(); i++){
+
+            if(!Get2KnowContainer.getInstance().getQuestions().get(i).isAsked()){
+                foundUnusedQuestion = true;
+                break;
+            }
+        }
+        return foundUnusedQuestion;
+    }
+
+    // This will reset all the questions to not being asked so the user can cycle through the again.
+    public void resetQuestions(){
+
+        for(int i = 0; i < Get2KnowContainer.getInstance().getQuestions().size(); i++){
+
+            Get2KnowContainer.getInstance().getQuestions().get(i).setAsked(false);
+        }
     }
 
     public void makeErrorMessage(String message){

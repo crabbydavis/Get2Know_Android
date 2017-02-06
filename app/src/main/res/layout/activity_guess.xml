@@ -97,6 +97,7 @@
         android:layout_marginLeft="20dp"
         android:text="Player1 Score"
         android:textColor="@color/black"
+        android:typeface="serif"
         />
 
     <TextView
@@ -109,6 +110,7 @@
         android:layout_marginRight="20dp"
         android:text="Player2 Score"
         android:textColor="@color/black"
+        android:typeface="serif"
         />
 
 </RelativeLayout>

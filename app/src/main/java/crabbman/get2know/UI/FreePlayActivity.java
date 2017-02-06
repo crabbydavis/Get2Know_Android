@@ -10,6 +10,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Random;
 
+import crabbman.get2know.Model.Get2KnowContainer;
 import crabbman.get2know.Model.Question;
 import crabbman.get2know.R;
 
@@ -29,13 +30,10 @@ public class FreePlayActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_free_play);
 
-        //Get the questions
-        freePlayQuestions = new ArrayList<>();
-        String[] questions = getResources().getStringArray(R.array.free_play_questions);
-        for(int x = 0; x < questions.length; x++){
-            Question tempQuestion = new Question();
-            tempQuestion.setQuestionText(questions[x]);
-            freePlayQuestions.add(tempQuestion);
+        //Get the questions if they haven't been generated already
+        if(freePlayQuestions == null) {
+            freePlayQuestions = new ArrayList<>();
+            getFreePlayQuestions();
         }
 
         //Set up the UI
@@ -51,6 +49,11 @@ public class FreePlayActivity extends Activity {
 
     public void nextQuestion(){
 
+        // First check to see if there are any available questions
+        if(!checkForQuestions()) {
+            resetQuestions();
+        }
+
         Random rand = new Random();
         boolean newQuestionFound;
         do {
@@ -61,8 +64,10 @@ public class FreePlayActivity extends Activity {
             }
             else{
                 freePlayQuestionText.setText(freePlayQuestions.get(randNum).getQuestionText());
+                freePlayQuestions.get(randNum).setAsked(true);
             }
         }while(!newQuestionFound);
+
     }
 
     public void listenButtons(){
@@ -81,5 +86,40 @@ public class FreePlayActivity extends Activity {
                 freePlayActivity.onBackPressed();
             }
         });
+    }
+
+    // This will get all of the Free Play Questions
+    public void getFreePlayQuestions(){
+
+        freePlayQuestions = new ArrayList<>();
+        String[] questions = getResources().getStringArray(R.array.free_play_questions);
+        for(int x = 0; x < questions.length; x++){
+            Question tempQuestion = new Question();
+            tempQuestion.setQuestionText(questions[x]);
+            freePlayQuestions.add(tempQuestion);
+        }
+    }
+
+    // This will check to see if any question hasn't been asked yet.
+    public boolean checkForQuestions(){
+
+        boolean foundUnusedQuestion = false;
+        for(int i = 0; i < freePlayQuestions.size(); i++){
+
+            if(!freePlayQuestions.get(i).isAsked()){
+                foundUnusedQuestion = true;
+                break;
+            }
+        }
+        return foundUnusedQuestion;
+    }
+
+    // This will reset all the questions to not being asked so the user can cycle through the again.
+    public void resetQuestions(){
+
+        for(int i = 0; i < freePlayQuestions.size(); i++){
+
+            freePlayQuestions.get(i).setAsked(false);
+        }
     }
 }

@@ -34,6 +34,12 @@ public class Get2KnowContainer {
         return mGet2KnowContainer;
     }
 
+    public void resetGame(){
+        numGuesses = 0;
+        winningScore = 3;
+        correctAnswer = 0;
+    }
+
     public ArrayList<Player> getPlayers() {
         return players;
     }

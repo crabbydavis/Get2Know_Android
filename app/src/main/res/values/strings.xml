@@ -1,10 +1,16 @@
 <resources>
+    <string name="answer"><u>Answer</u></string>
+    <string name="final_score"><u>Final Score</u></string>
+    <string name="free_play"><b>Free Play</b></string>
+    <string name="submit"><b>Submit</b></string>
+    <string name="play_game"><b>Play Game</b></string>
+    <string name="start_game"><b>Start Game</b></string>
     <string name="app_name">Get2Know</string>
-    <string name="player_1"><u><i>Player 1</i></u></string>
-    <string name="player_2"><u><i>Player 2</i></u></string>
+    <string name="player_1"><u>Player 1</u></string>
+    <string name="player_2"><u>Player 2</u></string>
     <string name="normal_game_title"><u><i>Normal Game Play:</i></u></string>
     <string name="free_play_title"><u><i>Free Play:</i></u></string>
-    <string name="game_info"><u><i>Normal Game Play:</i></u>\nThe normal game play is for two players who want to see who knows the other one better! A question will be posed and each player will enter their answer. Then, in turn, each player tries to guess their opponents answer among other auto-populated answers. Get2Know is a fun and interactive way to get to know people better!\n\n<u><i>Free Play:</i></u>\nThe Free Play option can be used for groups or if you just want to get to know someone without playing the game (which is lame). You are able to cycle through as many questions as your heart desires!"</string>
+    <string name="game_info"><u><i>Normal Game Play:</i></u>\nThe normal game play is for two players who want to see who knows the other one better! A question will be posed and each player will enter their answer. Then, in turn, each player tries to guess their opponent\'s answer among other auto-populated answers. The first player to guess correctly 3 times wins(unless there is a need for a tie-breaker).\n\n<u><i>Free Play:</i></u>\nThe Free Play option can be used for groups or if you just want to get to know someone without playing the game (which is lame). You are able to cycle through as many questions as your heart desires!"</string>
     <string-array name="game_questions">
         <item>What is your favorite color?Blue/Green/Yellow/Blue/Apple Green/Cherry Red</item>
         <item>If you had to be a farm animal, which would you be?Cow/Goat/Horse/Pig/Kangaroo/Zebra</item>
@@ -17,7 +23,7 @@
         <item>What is your favorite sport to watch?Football/Basketball/Soccer/Dance/Baseball/None</item>
         <item>What is your favorite sport to play?Football/Basketball/Soccer/Dance/Baseball/None</item>
         <item>What was the last item you cooked and ate?Spaghetti/Burritos/Pasta/Potatoes/Don\'t Remember</item>
-        <item>What age do you start to consider someone old?30/35/40/45/50/55/60/65/70/75/80/85/90/95</item>
+        <item>What age do you start to consider someone old?30/35/40/45/50/51/55/61/60/65/70/75/80/85/90/95</item>
     </string-array>
 
     <string-array name="free_play_questions">

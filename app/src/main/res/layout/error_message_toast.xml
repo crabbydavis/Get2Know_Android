@@ -16,5 +16,6 @@
               android:textStyle="bold"
               android:textAlignment="center"
               android:background="@color/Red"
+              android:typeface="serif"
         />
 </LinearLayout>

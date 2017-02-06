@@ -29,7 +29,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        populateModel();
+        // Get the questions if they haven't been generated yet
+        if(Get2KnowContainer.getInstance().getQuestions().size() == 0) {
+            populateModel();
+        }
         initializeButtons();
         listenButtons();
     }
