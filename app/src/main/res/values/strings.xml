@@ -24,6 +24,17 @@
         <item>What is your favorite sport to play?Football/Basketball/Soccer/Dance/Baseball/None</item>
         <item>What was the last item you cooked and ate?Spaghetti/Burritos/Pasta/Potatoes/Don\'t Remember</item>
         <item>What age do you start to consider someone old?30/35/40/45/50/51/55/61/60/65/70/75/80/85/90/95</item>
+        <item>If you could have lunch with a famous person, who would it be?Johnny Depp/Albert Einstein/Lady Gaga/Michael Jordan</item>
+        <item>What is your favorite kind of music?Pop/Hip-Hop/Rap/Classic Rock/Country/Folk/Jazz/Classical</item>
+        <item>What instrument do you wish you knew how to play?Piano/Guitar/Violin/Banjo/Drums/Bass/Flute/Harmonica</item>
+        <item>If you could have a super power, what would you pick?Flying/Super Speed/Super Strength/Invisibility/Mind Reading</item>
+        <item>Who is your favorite super hero?Batman/Superman/The Flash/The Hulk/Ant-Man/</item>
+        <item>Where do you want to retire?Florida/Spain/Canada/France/England/My House</item>
+        <item>What is the strangest thing you\'ve ever eaten?Haggis/Cow Tongue/Chicken Feet/Frog Legs/Escargot/Octopus/Fish Eggs</item>
+        <item>What are you afraid of?Death/Spiders/Snakes/Heights/Darkness</item>
+        <item>What\'s your favorite brand of clothing?Nike/Adidas/Gap/Hollister/Zumiez</item>
+        <item>What app do you use the most?Messenger/Snapchat/Instagram/Facebook/Pinterest/Calendar</item>
+        <item>How many minutes do you spend on social media everyday?10/15/20/30/45/60/90/120</item>
     </string-array>
 
     <string-array name="free_play_questions">
@@ -55,5 +66,6 @@
         <item>Do you play a musical instrument, if so which one(s)?</item>
         <item>What do you usually do when you have leisure time on your hands?</item>
         <item>If you have to dress and leave in a hurry what is the one thing you can easily cut out of your routine?</item>
+        <item>If you were invisible, where would you go?</item>
     </string-array>
 </resources>

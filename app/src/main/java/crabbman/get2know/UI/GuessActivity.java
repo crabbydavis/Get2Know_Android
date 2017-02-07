@@ -159,20 +159,20 @@ public class GuessActivity extends Activity{
 
     public void checkGuess(){
 
-        if(currentPlayer.getGuess() == otherPlayer.getAnswer()){
+        if(currentPlayer.getGuess().equalsIgnoreCase(otherPlayer.getAnswer())){
 
             //Here we create a custom toast, true means they got the question right
-            makeCustomToast("You Guessed Correctly!!", true);
+            makeCustomToast("Correct!", true);
 
             currentPlayer.incScore();
             guessesRemaining = 0;
         }
         else{
             //Here we create a custom toast, false means they got the question wrong
-            makeCustomToast("Nice Try! Better Luck Next Time!", false);
+            makeCustomToast("Nice Try! Better Luck Next Time.", false);
 
             --guessesRemaining;
-            StringBuffer guesses = new StringBuffer();
+            StringBuilder guesses = new StringBuilder();
             if(guessesRemaining > 1){
                 guesses.append("You have ");
                 guesses.append(guessesRemaining);
