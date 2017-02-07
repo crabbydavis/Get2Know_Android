@@ -1,4 +1,4 @@
-package crabbman.get2know.UI;
+package crabbman.get_2_know.UI;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,17 +9,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-import crabbman.get2know.Model.Get2KnowContainer;
-import crabbman.get2know.Model.Player;
-import crabbman.get2know.Model.Question;
-import crabbman.get2know.R;
+import crabbman.get_2_know.Model.Get2KnowContainer;
+import crabbman.get_2_know.Model.Player;
+import crabbman.get_2_know.Model.Question;
+import crabbman.get_2_know.R;
 
 /**
  * Created by crabbydavis on 1/9/17.

@@ -1,4 +1,4 @@
-package crabbman.get2know.Model;
+package crabbman.get_2_know.Model;
 
 /**
  * Created by crabbydavis on 1/9/17.

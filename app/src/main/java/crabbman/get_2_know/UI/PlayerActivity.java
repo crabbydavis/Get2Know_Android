@@ -1,10 +1,9 @@
-package crabbman.get2know.UI;
+package crabbman.get_2_know.UI;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Gravity;
@@ -15,12 +14,11 @@ import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import crabbman.get2know.Model.Get2KnowContainer;
-import crabbman.get2know.R;
+import crabbman.get_2_know.Model.Get2KnowContainer;
+import crabbman.get_2_know.R;
 
 /**
  * Created by crabbydavis on 1/9/17.

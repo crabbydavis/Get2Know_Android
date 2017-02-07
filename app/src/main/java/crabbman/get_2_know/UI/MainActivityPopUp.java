@@ -1,13 +1,11 @@
-package crabbman.get2know.UI;
+package crabbman.get_2_know.UI;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.transition.Explode;
-import android.transition.Slide;
 import android.util.DisplayMetrics;
 import android.view.Window;
 
-import crabbman.get2know.R;
+import crabbman.get_2_know.R;
 
 /**
  * Created by crabbydavis on 1/30/17.

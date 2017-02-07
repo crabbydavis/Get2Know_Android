@@ -1,17 +1,16 @@
-package crabbman.get2know.UI;
+package crabbman.get_2_know.UI;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import crabbman.get2know.Model.Get2KnowContainer;
-import crabbman.get2know.Model.Player;
-import crabbman.get2know.Model.Question;
-import crabbman.get2know.R;
+import crabbman.get_2_know.Model.Get2KnowContainer;
+import crabbman.get_2_know.Model.Player;
+import crabbman.get_2_know.Model.Question;
+import crabbman.get_2_know.R;
 
 public class MainActivity extends Activity {
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="crabbman.get2know"
+<manifest package="crabbman.get_2_know"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
@@ -9,20 +9,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:minSdkVersion="16">
-        <activity android:name=".UI.MainActivity">
+        <activity android:name="crabbman.get_2_know.UI.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".UI.PlayerActivity"></activity>
-        <activity android:name=".UI.QuestionActivity"></activity>
-        <activity android:name=".UI.AnswerActivity"></activity>
-        <activity android:name=".UI.GuessActivity"></activity>
-        <activity android:name=".UI.GameOverActivity"></activity>
-        <activity android:name=".UI.FreePlayActivity"></activity>
-        <activity android:name=".UI.MainActivityPopUp" android:theme="@style/AppTheme.PopupTheme">
+        <activity android:name="crabbman.get_2_know.UI.PlayerActivity"></activity>
+        <activity android:name="crabbman.get_2_know.UI.QuestionActivity"></activity>
+        <activity android:name="crabbman.get_2_know.UI.AnswerActivity"></activity>
+        <activity android:name="crabbman.get_2_know.UI.GuessActivity"></activity>
+        <activity android:name="crabbman.get_2_know.UI.GameOverActivity"></activity>
+        <activity android:name="crabbman.get_2_know.UI.FreePlayActivity"></activity>
+        <activity android:name="crabbman.get_2_know.UI.MainActivityPopUp" android:theme="@style/AppTheme.PopupTheme">
         </activity>
     </application>
 

@@ -13,7 +13,7 @@
         android:layout_marginLeft="20dp"
         android:layout_centerHorizontal="true"
         android:text="Sample"
-        android:textSize="30dp"
+        android:textSize="28dp"
         android:textAlignment="center"
         android:typeface="serif"
         android:textColor="@color/black"

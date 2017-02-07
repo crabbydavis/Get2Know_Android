@@ -1,4 +1,4 @@
-package crabbman.get2know;
+package crabbman.get_2_know;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

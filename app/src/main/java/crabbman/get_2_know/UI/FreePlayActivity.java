@@ -1,7 +1,6 @@
-package crabbman.get2know.UI;
+package crabbman.get_2_know.UI;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,9 +9,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Random;
 
-import crabbman.get2know.Model.Get2KnowContainer;
-import crabbman.get2know.Model.Question;
-import crabbman.get2know.R;
+import crabbman.get_2_know.Model.Question;
+import crabbman.get_2_know.R;
 
 /**
  * Created by crabbydavis on 1/25/17.

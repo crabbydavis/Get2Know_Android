@@ -1,4 +1,4 @@
-package crabbman.get2know.UI;
+package crabbman.get_2_know.UI;
 
 import android.app.Activity;
 import android.content.Context;
@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import crabbman.get2know.Model.Get2KnowContainer;
-import crabbman.get2know.R;
+import crabbman.get_2_know.Model.Get2KnowContainer;
+import crabbman.get_2_know.R;
 
 /**
  * Created by crabbydavis on 1/9/17.
