@@ -8,6 +8,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -158,6 +159,9 @@ public class GuessActivity extends Activity{
 
     public void checkGuess(){
 
+        // First decrement the number of guesses they have left
+        --guessesRemaining;
+        // Now check to see if they guessed  correctly
         if(currentPlayer.getGuess().equalsIgnoreCase(otherPlayer.getAnswer())){
 
             //Here we create a custom toast, true means they got the question right
@@ -166,11 +170,13 @@ public class GuessActivity extends Activity{
             currentPlayer.incScore();
             guessesRemaining = 0;
         }
+        else if(!currentPlayer.getGuess().equalsIgnoreCase(otherPlayer.getAnswer()) && guessesRemaining == 0){
+            //Here we create a custom toast, false means they got the question wrong
+            makeCustomToast("Nice Try! The correct answer was " + otherPlayer.getAnswer(), false);
+        }
         else{
             //Here we create a custom toast, false means they got the question wrong
             makeCustomToast("Nice Try! Better Luck Next Time.", false);
-
-            --guessesRemaining;
             StringBuilder guesses = new StringBuilder();
             if(guessesRemaining > 1){
                 guesses.append("You have ");
@@ -196,12 +202,7 @@ public class GuessActivity extends Activity{
                     }
 
                     public void onFinish() {
-                        //if ((currentPlayer.getScore() == Get2KnowContainer.getInstance().getWinningScore()) || (otherPlayer.getScore() == Get2KnowContainer.getInstance().getWinningScore())) {
-                            //endGame();
-                        //}
-                        //else {
-                            nextPlayersTurn();
-                        //}
+                        nextPlayersTurn();
                     }
 
                 }.start();
@@ -238,13 +239,16 @@ public class GuessActivity extends Activity{
 
     public void nextPlayersTurn(){
 
-        Intent guessIntent = new Intent(this, GuessActivity.class);
-        startActivity(guessIntent);
+        //getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
+        //Intent guessIntent = new Intent(this, GuessActivity.class);
+        startActivity(new Intent(this, GuessActivity.class));
+        overridePendingTransition(R.animator.anim_push_right_out, R.animator.anim_push_left_out);
     }
 
     public void nextQuestion(){
         Intent questionIntent = new Intent(this, QuestionActivity.class);
         startActivity(questionIntent);
+        overridePendingTransition(R.animator.anim_push_right_out, R.animator.anim_push_left_out);
     }
 
     public boolean checkForWinner(){

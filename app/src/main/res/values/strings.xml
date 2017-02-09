@@ -12,29 +12,29 @@
     <string name="free_play_title"><u><i>Free Play:</i></u></string>
     <string name="game_info"><u><i>Normal Game Play:</i></u>\nThe normal game play is for two players who want to see who knows the other one better! A question will be posed and each player will enter their answer. Then, in turn, each player tries to guess their opponent\'s answer among other auto-populated answers. The first player to guess correctly 3 times wins(unless there is a need for a tie-breaker).\n\n<u><i>Free Play:</i></u>\nThe Free Play option can be used for groups or if you just want to get to know someone without playing the game (which is lame). You are able to cycle through as many questions as your heart desires!"</string>
     <string-array name="game_questions">
-        <item>What is your favorite color?Blue/Green/Yellow/Blue/Apple Green/Cherry Red</item>
-        <item>If you had to be a farm animal, which would you be?Cow/Goat/Horse/Pig/Kangaroo/Zebra</item>
-        <item>How many siblings do you have?1/2/3/4/5/6/7/8/9/10/11/12</item>
-        <item>What is your favorite subject in school?Math/Science/History/Computer Science/Sports/None</item>
-        <item>What is your favorite flavor of ice cream?Chocolate/Vanilla/None/Pecan/Moose Tracks</item>
-        <item>What is your favorite season?Winter/Spring/Summer/Fall/None</item>
-        <item>What Country do you want to travel to before you die?Spain/France/Chile/Bolivia/South Africa/Iceland/Canada/Poland/England/Scotland</item>
-        <item>What is your favorite food?Pizza/French Fries/Ice Cream/Bagels/Chips/Pasta/Fried Rice/Mexican/Burritos/Corn</item>
-        <item>What is your favorite sport to watch?Football/Basketball/Soccer/Dance/Baseball/None</item>
-        <item>What is your favorite sport to play?Football/Basketball/Soccer/Dance/Baseball/None</item>
-        <item>What was the last item you cooked and ate?Spaghetti/Burritos/Pasta/Potatoes/Don\'t Remember</item>
+        <item>What is your favorite color?Blue/Green/Yellow/Apple Green/Cherry Red/Pink/Orange/Indigo/Violet/Aqua Blue/Maroon</item>
+        <item>If you had to be a farm animal, which would you be?Cow/Goat/Horse/Chicken/Rooster/Pig/Frog/Dog/Duck/Turkey/Sheep</item>
+        <item>How many siblings do you have (Enter a number)?1/2/3/4/5/6/7/8/9/10/11/12</item>
+        <item>What is your favorite subject in school?Math/Chemistry/Drama/Dance/Physics/Biology/History/Computer Science/Sports/Lunch/Art/Choir</item>
+        <item>What is your favorite flavor of ice cream?Chocolate/Vanilla/Double Chocolate/Cookie Dough/Mint/Pecan/Moose Tracks/Rocky Road/Bubblegum</item>
+        <item>What is your favorite season?Winter/Spring/Summer/Fall</item>
+        <item>What Country do you want to travel to before you die?Spain/France/Chile/Bolivia/South Africa/Iceland/Canada/Switzerland/Finland/Austria/Australia/Poland/England/Scotland/India</item>
+        <item>What is your favorite food?Pizza/French Fries/Ice Cream/Bagels/Chips/Pasta/Fried Rice/Mexican/Burritos/Corn/Cake/Hamburguers/Hot Pockets</item>
+        <item>What is your favorite sport to watch?Football/Basketball/Soccer/Dance/Baseball/Boxing/Volleyball/Wrestling/BMX/Snowboarding/Skiing</item>
+        <item>What is your favorite sport to play?Football/Basketball/Soccer/Dance/Baseball/Boxing/Volleyball/Wrestling/BMX/Snowboarding/Skiing</item>
+        <item>What was the last item you cooked and ate?Spaghetti/Toast/Burritos/Pasta/Potatoes/IDK/Chicken/Rice/Bacon/Eggs/Turkey</item>
         <item>What age do you start to consider someone old?30/35/40/45/50/51/55/61/60/65/70/75/80/85/90/95</item>
         <item>If you could have lunch with a famous person, who would it be?Johnny Depp/Albert Einstein/Lady Gaga/Michael Jordan</item>
         <item>What is your favorite kind of music?Pop/Hip-Hop/Rap/Classic Rock/Country/Folk/Jazz/Classical</item>
-        <item>What instrument do you wish you knew how to play?Piano/Guitar/Violin/Banjo/Drums/Bass/Flute/Harmonica</item>
+        <item>What instrument do you wish you knew how to play?Piano/Guitar/Violin/Banjo/Drums/Bass/Flute/Harmonica/</item>
         <item>If you could have a super power, what would you pick?Flying/Super Speed/Super Strength/Invisibility/Mind Reading</item>
-        <item>Who is your favorite super hero?Batman/Superman/The Flash/The Hulk/Ant-Man/</item>
+        <item>Who is your favorite super hero?Batman/Superman/The Flash/The Hulk/Ant-Man/Spiderman/Black Widow</item>
         <item>Where do you want to retire?Florida/Spain/Canada/France/England/My House</item>
-        <item>What is the strangest thing you\'ve ever eaten?Haggis/Cow Tongue/Chicken Feet/Frog Legs/Escargot/Octopus/Fish Eggs</item>
-        <item>What are you afraid of?Death/Spiders/Snakes/Heights/Darkness</item>
-        <item>What\'s your favorite brand of clothing?Nike/Adidas/Gap/Hollister/Zumiez</item>
-        <item>What app do you use the most?Messenger/Snapchat/Instagram/Facebook/Pinterest/Calendar</item>
-        <item>How many minutes do you spend on social media everyday?10/15/20/30/45/60/90/120</item>
+        <item>What is the strangest thing you\'ve ever eaten?Haggis/Cow Tongue/Chicken Feet/Frog Legs/Escargot/Octopus/Fish Eggs/Intestine</item>
+        <item>What are you afraid of?Death/Spiders/Snakes/Heights/Darkness/Feet/Crowds/People/Clowns</item>
+        <item>What\'s your favorite brand of clothing?Nike/Adidas/Gap/Hollister/Zumiez/Aeropostale/Hanes</item>
+        <item>What app do you use the most?Messenger/Snapchat/Instagram/Facebook/Pinterest/Calendar/Calculator/Flashlight/Clock</item>
+        <item>How many minutes do you spend on social media everyday (Enter a number)?10/15/20/30/45/60/90/120</item>
     </string-array>
 
     <string-array name="free_play_questions">

@@ -96,9 +96,9 @@ public class QuestionActivity extends Activity {
                 Get2KnowContainer.getInstance().setCurrentPlayer(player1);
 
                 // Animate to have the answer activity slide in from the right and slide out left
-                overridePendingTransition(R.animator.anim_push_right_in, R.animator.anim_push_left_out);
                 Intent player1Answer = new Intent(questionContext, AnswerActivity.class);
                 startActivity(player1Answer);
+                //overridePendingTransition(R.animator.anim_push_right_out, R.animator.anim_push_right_in);
             }
         });
 
@@ -110,9 +110,9 @@ public class QuestionActivity extends Activity {
                 Get2KnowContainer.getInstance().setCurrentPlayer(player2);
 
                 // Animate to have the answer activity slide in from the left and slide out right
-                overridePendingTransition(R.animator.anim_push_down_out, R.animator.anim_push_right_out);
                 Intent player2Answer = new Intent(questionContext, AnswerActivity.class);
                 startActivity(player2Answer);
+                //overridePendingTransition(R.animator.anim_push_left_out, R.animator.anim_push_left_in);
             }
         });
 

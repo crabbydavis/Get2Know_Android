@@ -33,7 +33,7 @@ public class AnswerActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
+        //getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         setContentView(R.layout.activity_answer);
 
         initializeUI();
@@ -90,6 +90,12 @@ public class AnswerActivity extends Activity {
                 }
                 else {
                     answerActivity.onBackPressed();
+                    /*if(currentPlayer == 0){
+                        overridePendingTransition(R.animator.anim_push_left_out, R.animator.anim_push_left_in);
+                    }
+                    else{
+                        overridePendingTransition(R.animator.anim_push_right_out, R.animator.anim_push_right_in);
+                    }*/
                 }
             }
         });
